@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navoiy shahar haqida</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+        }
+
+        header p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #1e3c72;
+            margin-bottom: 30px;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 18px;
+            max-width: 900px;
+            margin: 0 auto 40px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.3);
+        }
+
+        .info-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #1e3c72;
+        }
+
+        .card-content p {
+            margin-bottom: 0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Navoiy shahriga xush kelibsiz</h1>
+        <p>Navoiy viloyati va Navbahor tumani go‘zal tabiati, tarixiy joylari va zamonaviy rivojlangan shahar manzaralari bilan mashhur. Quyida siz Navoiyning eng chiroyli joylarini ko‘rishingiz mumkin.</p>
+    </header>
+
+    <section>
+        <h2>Chiroyli manzaralar</h2>
+        <div class="image-grid">
+            <img src="./Navoiy shahar manzarasi.jpg" alt="Navoiy shahar manzarasi">
+            <img src="./Navbahor tabiati.jpg" alt="Navbahor tabiati">
+            <img src="./tog'.jpg" alt="Navoiy tog'lari">
+            
+        </div>
+    </section>
+
+    <section>
+        <h2>Tarixiy va madaniy joylar</h2>
+        <div class="info-cards">
+            <div class="card">
+                <img src="./Навои1.jpg" alt="Navoiy tarix muzeyi">
+                <div class="card-content">
+                    <h3>Navoiy Tarix Muzeyi</h3>
+                    <p>Bu muzey Navoiy viloyatining tarixini va madaniyatini o‘rganish uchun ajoyib joy.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Markaziy Park.webp" alt="Navoiy Park">
+                <div class="card-content">
+                    <h3>Markaziy Park</h3>
+                    <p>Shahar markazidagi park, dam olish va tabiat bilan yaqin bo‘lish uchun ideal maskan.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./daryo.png" alt="Navoiy daryosi">
+                <div class="card-content">
+                    <h3>Navoiy Daryosi</h3>
+                    <p>Shahar Navoiy viloyatining janubidagi Zarafshon daryosi yaqinida, Toshkent shahridan 360 km janubi-gʻarbda joylashgan. Samarqandgacha boʻlgan masofa 140 km .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
